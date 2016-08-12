@@ -4,7 +4,7 @@ input {
     font-family: 'Roboto', sans-serif;
     margin: 5px 0;
     padding: 10px 15px;
-    width: 300px;
+    width: 298px;
 }
 
 div.row {
@@ -14,27 +14,23 @@ div.row {
 
 div.container {
     margin: 100px auto;
-    width: 100%;
+    width: 600px;
 }
 
 div.wrapper {
     display: block;
     margin: 0 auto;
-    width: 420px;
+    width: 70%;
 }
 
-.labels {
-    float: left;
-    width: 74px;
-}
-
-.labels label {
+label {
     display: block;
+    float: left;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding: 13px 8px;
     text-align: right;
-    width: 100%;
+    width: 74px;
 }
 
 .inputs {
@@ -49,7 +45,7 @@ input::last-child {
 pre {
     display: block;
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
 }
 
 code {
@@ -60,4 +56,25 @@ code {
     padding: 12px 15px;
     text-align: center;
     width: 100%;
+}
+
+@media only screen and (max-width: 599px) {
+    div.container {
+        margin: 0;
+        width: 100%;
+    }
+
+    div.wrapper {
+        width: 100%;
+    }
+
+    label {
+        text-align: left;
+        width: 100%;
+    }
+
+    code {
+        padding: 8px 0;
+        margin: 0 8px;
+    }
 }
